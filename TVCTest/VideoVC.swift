@@ -8,17 +8,46 @@
 
 import UIKit
 
-class VideoViewController: UIViewController {
+class VideoVC: UIViewController {
     
     @IBOutlet weak var ytWebView: UIWebView!
+    @IBOutlet weak var headline: UILabel!
+    @IBOutlet weak var timestamp: UILabel!
+    @IBOutlet weak var body: UITextView!
     
+    var videoCode: String!
+    
+    private var _contentItem: ContentItem!
+    
+    
+    var contentItem: ContentItem {
+        
+        get {
+            return _contentItem
+            
+        } set {
+            _contentItem = newValue
+        }
+    }
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        headline.text = contentItem.headline
+        timestamp.text = contentItem.timestamp
+        body.text = contentItem.body
+        videoCode = contentItem.videoName
+        
+       
 
         // Do any additional setup after loading the view.
-        getVideo(videoCode: "eQLzrlMeySU")
+        getVideo(videoCode: videoCode)
     }
+    
+    
+
     
    func getVideo(videoCode:String) {
     
@@ -33,14 +62,5 @@ class VideoViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }

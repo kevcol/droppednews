@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970F338B1E8DA69A00CA467D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970F33891E8DA69A00CA467D /* TableViewCell.swift */; };
+		970F338C1E8DA69A00CA467D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 970F338A1E8DA69A00CA467D /* TableViewCell.xib */; };
 		9760349A1E64F45500D82937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976034991E64F45500D82937 /* AppDelegate.swift */; };
 		9760349C1E64F45500D82937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9760349B1E64F45500D82937 /* ViewController.swift */; };
 		9760349F1E64F45500D82937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9760349D1E64F45500D82937 /* Main.storyboard */; };
@@ -14,17 +16,23 @@
 		976034A41E64F45500D82937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976034A21E64F45500D82937 /* LaunchScreen.storyboard */; };
 		976034AC1E64FC2900D82937 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976034AB1E64FC2900D82937 /* CardCell.swift */; };
 		976034AE1E650CC800D82937 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976034AD1E650CC800D82937 /* HomeViewController.swift */; };
+		9762451D1E8DEAA5006C8878 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9762451C1E8DEAA5006C8878 /* MainVC.swift */; };
+		9762451F1E8DEDC4006C8878 /* PrimaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9762451E1E8DEDC4006C8878 /* PrimaryCell.swift */; };
+		976245211E8DF095006C8878 /* ContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976245201E8DF095006C8878 /* ContentItem.swift */; };
+		976245241E8EDE71006C8878 /* ArticleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976245231E8EDE71006C8878 /* ArticleVC.swift */; };
 		9768CB911E67A63F0067AF5A /* drupalconDublinAudienceJosefJerabekFlickr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9768CB8D1E67A63F0067AF5A /* drupalconDublinAudienceJosefJerabekFlickr.jpg */; };
-		9768CB921E67A63F0067AF5A /* drupalconDublinAudienceJosefJerabekFlickr50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9768CB8E1E67A63F0067AF5A /* drupalconDublinAudienceJosefJerabekFlickr50.jpg */; };
+		9768CB921E67A63F0067AF5A /* drupalcon2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9768CB8E1E67A63F0067AF5A /* drupalcon2.jpg */; };
 		9768CB931E67A63F0067AF5A /* drupalconDublinStageJosefJerabekFlickr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9768CB8F1E67A63F0067AF5A /* drupalconDublinStageJosefJerabekFlickr.jpg */; };
-		9768CB941E67A63F0067AF5A /* drupalconDublinStageJosefJerabekFlickr50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9768CB901E67A63F0067AF5A /* drupalconDublinStageJosefJerabekFlickr50.jpg */; };
-		97710F9E1E67AE4B00D75DC0 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97710F9D1E67AE4B00D75DC0 /* VideoViewController.swift */; };
-		97710FA01E68DD5C00D75DC0 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97710F9F1E68DD5C00D75DC0 /* AudioViewController.swift */; };
+		9768CB941E67A63F0067AF5A /* drupalcon1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9768CB901E67A63F0067AF5A /* drupalcon1.jpg */; };
+		97710F9E1E67AE4B00D75DC0 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97710F9D1E67AE4B00D75DC0 /* VideoVC.swift */; };
+		97710FA01E68DD5C00D75DC0 /* AudioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97710F9F1E68DD5C00D75DC0 /* AudioVC.swift */; };
 		97710FA31E68E28800D75DC0 /* changing-lives_changing-the-world.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 97710FA21E68E28800D75DC0 /* changing-lives_changing-the-world.mp3 */; };
 		97710FA51E6929AD00D75DC0 /* boomboxPexels159613.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97710FA41E6929AD00D75DC0 /* boomboxPexels159613.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		970F33891E8DA69A00CA467D /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		970F338A1E8DA69A00CA467D /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		976034961E64F45500D82937 /* TVCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976034991E64F45500D82937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9760349B1E64F45500D82937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,13 +41,17 @@
 		976034A31E64F45500D82937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		976034A51E64F45500D82937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		976034AB1E64FC2900D82937 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
-		976034AD1E650CC800D82937 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		976034AD1E650CC800D82937 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = TVCTest/HomeViewController.swift; sourceTree = "<group>"; };
+		9762451C1E8DEAA5006C8878 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		9762451E1E8DEDC4006C8878 /* PrimaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryCell.swift; sourceTree = "<group>"; };
+		976245201E8DF095006C8878 /* ContentItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentItem.swift; sourceTree = "<group>"; };
+		976245231E8EDE71006C8878 /* ArticleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleVC.swift; sourceTree = "<group>"; };
 		9768CB8D1E67A63F0067AF5A /* drupalconDublinAudienceJosefJerabekFlickr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drupalconDublinAudienceJosefJerabekFlickr.jpg; sourceTree = "<group>"; };
-		9768CB8E1E67A63F0067AF5A /* drupalconDublinAudienceJosefJerabekFlickr50.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drupalconDublinAudienceJosefJerabekFlickr50.jpg; sourceTree = "<group>"; };
+		9768CB8E1E67A63F0067AF5A /* drupalcon2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drupalcon2.jpg; sourceTree = "<group>"; };
 		9768CB8F1E67A63F0067AF5A /* drupalconDublinStageJosefJerabekFlickr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drupalconDublinStageJosefJerabekFlickr.jpg; sourceTree = "<group>"; };
-		9768CB901E67A63F0067AF5A /* drupalconDublinStageJosefJerabekFlickr50.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drupalconDublinStageJosefJerabekFlickr50.jpg; sourceTree = "<group>"; };
-		97710F9D1E67AE4B00D75DC0 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
-		97710F9F1E68DD5C00D75DC0 /* AudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		9768CB901E67A63F0067AF5A /* drupalcon1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drupalcon1.jpg; sourceTree = "<group>"; };
+		97710F9D1E67AE4B00D75DC0 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		97710F9F1E68DD5C00D75DC0 /* AudioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioVC.swift; sourceTree = "<group>"; };
 		97710FA21E68E28800D75DC0 /* changing-lives_changing-the-world.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "changing-lives_changing-the-world.mp3"; sourceTree = "<group>"; };
 		97710FA41E6929AD00D75DC0 /* boomboxPexels159613.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boomboxPexels159613.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +70,7 @@
 		9760348D1E64F45400D82937 = {
 			isa = PBXGroup;
 			children = (
+				976245221E8EDE23006C8878 /* Deprecated */,
 				976034981E64F45500D82937 /* TVCTest */,
 				976034971E64F45500D82937 /* Products */,
 			);
@@ -74,6 +87,9 @@
 		976034981E64F45500D82937 /* TVCTest */ = {
 			isa = PBXGroup;
 			children = (
+				976245191E8DE4FF006C8878 /* Model */,
+				9762451A1E8DE508006C8878 /* View */,
+				9762451B1E8DE510006C8878 /* Controller */,
 				9768CB8B1E67A60E0067AF5A /* Media */,
 				976034991E64F45500D82937 /* AppDelegate.swift */,
 				9760349B1E64F45500D82937 /* ViewController.swift */,
@@ -82,11 +98,45 @@
 				976034A21E64F45500D82937 /* LaunchScreen.storyboard */,
 				976034A51E64F45500D82937 /* Info.plist */,
 				976034AB1E64FC2900D82937 /* CardCell.swift */,
-				976034AD1E650CC800D82937 /* HomeViewController.swift */,
-				97710F9D1E67AE4B00D75DC0 /* VideoViewController.swift */,
-				97710F9F1E68DD5C00D75DC0 /* AudioViewController.swift */,
+				970F33891E8DA69A00CA467D /* TableViewCell.swift */,
+				970F338A1E8DA69A00CA467D /* TableViewCell.xib */,
 			);
 			path = TVCTest;
+			sourceTree = "<group>";
+		};
+		976245191E8DE4FF006C8878 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				976245201E8DF095006C8878 /* ContentItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9762451A1E8DE508006C8878 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9762451E1E8DEDC4006C8878 /* PrimaryCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9762451B1E8DE510006C8878 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9762451C1E8DEAA5006C8878 /* MainVC.swift */,
+				976245231E8EDE71006C8878 /* ArticleVC.swift */,
+				97710F9D1E67AE4B00D75DC0 /* VideoVC.swift */,
+				97710F9F1E68DD5C00D75DC0 /* AudioVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		976245221E8EDE23006C8878 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				976034AD1E650CC800D82937 /* HomeViewController.swift */,
+			);
+			name = Deprecated;
 			sourceTree = "<group>";
 		};
 		9768CB8B1E67A60E0067AF5A /* Media */ = {
@@ -103,9 +153,9 @@
 			children = (
 				97710FA41E6929AD00D75DC0 /* boomboxPexels159613.jpeg */,
 				9768CB8D1E67A63F0067AF5A /* drupalconDublinAudienceJosefJerabekFlickr.jpg */,
-				9768CB8E1E67A63F0067AF5A /* drupalconDublinAudienceJosefJerabekFlickr50.jpg */,
+				9768CB8E1E67A63F0067AF5A /* drupalcon2.jpg */,
 				9768CB8F1E67A63F0067AF5A /* drupalconDublinStageJosefJerabekFlickr.jpg */,
-				9768CB901E67A63F0067AF5A /* drupalconDublinStageJosefJerabekFlickr50.jpg */,
+				9768CB901E67A63F0067AF5A /* drupalcon1.jpg */,
 			);
 			name = Photos;
 			sourceTree = "<group>";
@@ -183,8 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				976034A41E64F45500D82937 /* LaunchScreen.storyboard in Resources */,
-				9768CB941E67A63F0067AF5A /* drupalconDublinStageJosefJerabekFlickr50.jpg in Resources */,
-				9768CB921E67A63F0067AF5A /* drupalconDublinAudienceJosefJerabekFlickr50.jpg in Resources */,
+				970F338C1E8DA69A00CA467D /* TableViewCell.xib in Resources */,
+				9768CB941E67A63F0067AF5A /* drupalcon1.jpg in Resources */,
+				9768CB921E67A63F0067AF5A /* drupalcon2.jpg in Resources */,
 				97710FA31E68E28800D75DC0 /* changing-lives_changing-the-world.mp3 in Resources */,
 				97710FA51E6929AD00D75DC0 /* boomboxPexels159613.jpeg in Resources */,
 				976034A11E64F45500D82937 /* Assets.xcassets in Resources */,
@@ -202,11 +253,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				976034AE1E650CC800D82937 /* HomeViewController.swift in Sources */,
+				970F338B1E8DA69A00CA467D /* TableViewCell.swift in Sources */,
 				9760349C1E64F45500D82937 /* ViewController.swift in Sources */,
+				976245241E8EDE71006C8878 /* ArticleVC.swift in Sources */,
+				9762451F1E8DEDC4006C8878 /* PrimaryCell.swift in Sources */,
 				9760349A1E64F45500D82937 /* AppDelegate.swift in Sources */,
-				97710F9E1E67AE4B00D75DC0 /* VideoViewController.swift in Sources */,
+				97710F9E1E67AE4B00D75DC0 /* VideoVC.swift in Sources */,
+				9762451D1E8DEAA5006C8878 /* MainVC.swift in Sources */,
 				976034AC1E64FC2900D82937 /* CardCell.swift in Sources */,
-				97710FA01E68DD5C00D75DC0 /* AudioViewController.swift in Sources */,
+				976245211E8DF095006C8878 /* ContentItem.swift in Sources */,
+				97710FA01E68DD5C00D75DC0 /* AudioVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

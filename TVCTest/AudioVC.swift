@@ -9,23 +9,50 @@
 import UIKit
 import AVFoundation
 
-class AudioViewController: UIViewController {
+class AudioVC: UIViewController {
    
     var audioPlayer = AVAudioPlayer()
+    var mp3: String!
 
+    @IBOutlet weak var mainImage: UIImageView!
+    @IBOutlet weak var headline: UILabel!
+    @IBOutlet weak var timestamp: UILabel!
+    @IBOutlet weak var body: UITextView!
+    
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var fwdButton: UIButton!
     
+    private var _contentItem: ContentItem!
+    
+    var contentItem: ContentItem {
+        
+        get {
+            return _contentItem
+            
+        } set {
+            _contentItem = newValue
+        }
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mainImage.image = contentItem.mainImage
+        headline.text = contentItem.headline
+        timestamp.text = contentItem.timestamp
+        body.text = contentItem.body
+        mp3 = contentItem.audioName
+        
+        
+        
 
         // Do any additional setup after loading the view.
         
         do {
             
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "changing-lives_changing-the-world", ofType: "mp3")!))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: mp3, ofType: "mp3")!))
             audioPlayer.prepareToPlay()
             
             var audioSession = AVAudioSession.sharedInstance()
@@ -44,12 +71,9 @@ class AudioViewController: UIViewController {
             print(error)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+
+   
     @IBAction func Play(_ sender: Any) {
         audioPlayer.play()
     }
