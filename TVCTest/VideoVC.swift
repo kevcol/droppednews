@@ -39,11 +39,10 @@ class VideoVC: UIViewController {
         timestamp.text = contentItem.timestamp
         body.text = contentItem.body
         videoCode = contentItem.videoName
-        
        
 
         // Do any additional setup after loading the view.
-        getVideo(videoCode: videoCode)
+        getVideo(videoCode: "eQLzrlMeySU")
     }
     
     

@@ -49,10 +49,33 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                              audioName: "",
                              videoName: "eQLzrlMeySU")
         
+        let c4 = ContentItem(type: 1,
+                             mainImage: #imageLiteral(resourceName: "drupalcon2"),
+                             headline: "Scooby dooby doo where are you? Someone something somehow",
+                             timestamp: "March 30, 2017 -- 7:00 am PDT",
+                             byline: "By Larry / DroppedNews",
+                             body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                             audioName: "",
+                             videoName: "")
+        
+        let c5 = ContentItem(type: 1,
+                             mainImage: #imageLiteral(resourceName: "drupalcon2"),
+                             headline: "Sugar honey ice tea this is just a dummy headline",
+                             timestamp: "March 30, 2017 -- 7:00 am PDT",
+                             byline: "By Larry / DroppedNews",
+                             body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                             audioName: "",
+                             videoName: "")
+        
         contentItems.append(c1)
         contentItems.append(c2)
         contentItems.append(c3)
+        contentItems.append(c4)
+        contentItems.append(c5)
         
+        
+        
+                
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -74,8 +97,18 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PrimaryCell", for: indexPath) as? PrimaryCell {
             
             let contentItem = contentItems[indexPath.row]
+            let type = contentItems[indexPath.row].type
             
-            cell.updateUI(contentItem: contentItem)
+            if type == 1 {
+                
+            } else if type == 2 {
+                
+            } else if type == 3 {
+                
+            }
+            
+            
+            cell.updateUI(contentItem: contentItem, type: type)
             
             return cell
         }

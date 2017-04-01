@@ -28,6 +28,7 @@
 		97710FA01E68DD5C00D75DC0 /* AudioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97710F9F1E68DD5C00D75DC0 /* AudioVC.swift */; };
 		97710FA31E68E28800D75DC0 /* changing-lives_changing-the-world.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 97710FA21E68E28800D75DC0 /* changing-lives_changing-the-world.mp3 */; };
 		97710FA51E6929AD00D75DC0 /* boomboxPexels159613.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97710FA41E6929AD00D75DC0 /* boomboxPexels159613.jpeg */; };
+		97FDC8771E8F301B00871D04 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FDC8761E8F301B00871D04 /* NavigationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		97710F9F1E68DD5C00D75DC0 /* AudioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioVC.swift; sourceTree = "<group>"; };
 		97710FA21E68E28800D75DC0 /* changing-lives_changing-the-world.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "changing-lives_changing-the-world.mp3"; sourceTree = "<group>"; };
 		97710FA41E6929AD00D75DC0 /* boomboxPexels159613.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boomboxPexels159613.jpeg; sourceTree = "<group>"; };
+		97FDC8761E8F301B00871D04 /* NavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				976245231E8EDE71006C8878 /* ArticleVC.swift */,
 				97710F9D1E67AE4B00D75DC0 /* VideoVC.swift */,
 				97710F9F1E68DD5C00D75DC0 /* AudioVC.swift */,
+				97FDC8761E8F301B00871D04 /* NavigationVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				976245241E8EDE71006C8878 /* ArticleVC.swift in Sources */,
 				9762451F1E8DEDC4006C8878 /* PrimaryCell.swift in Sources */,
 				9760349A1E64F45500D82937 /* AppDelegate.swift in Sources */,
+				97FDC8771E8F301B00871D04 /* NavigationVC.swift in Sources */,
 				97710F9E1E67AE4B00D75DC0 /* VideoVC.swift in Sources */,
 				9762451D1E8DEAA5006C8878 /* MainVC.swift in Sources */,
 				976034AC1E64FC2900D82937 /* CardCell.swift in Sources */,

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="98R-HV-CJc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ce3-NA-sOr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -69,10 +68,11 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="About" image="info-off" id="5Pp-7t-WKh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V3k-cN-YIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1950" y="36"/>
+            <point key="canvasLocation" x="1250" y="776"/>
         </scene>
         <!--MainVC-->
         <scene sceneID="8uk-1y-WeR">
@@ -86,15 +86,15 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="290" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Ib-44-WEq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="248" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Ib-44-WEq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PrimaryCell" rowHeight="250" id="Xcn-DM-JoS" customClass="PrimaryCell" customModule="TVCTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="250"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PrimaryCell" id="Xcn-DM-JoS" customClass="PrimaryCell" customModule="TVCTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="248"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xcn-DM-JoS" id="siU-s2-s5m">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="247"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eBl-Ev-fH7">
@@ -103,25 +103,32 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                                                         <constraint firstAttribute="height" constant="175" id="uPB-ON-5Ja"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin Toolbar intends to improve the default Drupal Toolbar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7W-GX-HOf">
-                                                    <rect key="frame" x="10" y="183" width="355" height="43"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Nje-S8-qg2">
+                                                    <rect key="frame" x="20" y="183" width="335" height="43"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newspaper-off" translatesAutoresizingMaskIntoConstraints="NO" id="bMZ-jx-gdb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="21.5" height="43"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin Toolbar intends to improve the default Drupal Toolbar" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7W-GX-HOf">
+                                                            <rect key="frame" x="36.5" y="0.0" width="298.5" height="43"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="n7W-GX-HOf" firstAttribute="leading" secondItem="siU-s2-s5m" secondAttribute="leading" constant="10" id="396-pf-tOh"/>
-                                                <constraint firstItem="n7W-GX-HOf" firstAttribute="top" secondItem="eBl-Ev-fH7" secondAttribute="bottom" constant="8" id="6xs-Ra-Y8H"/>
+                                                <constraint firstItem="Nje-S8-qg2" firstAttribute="top" secondItem="eBl-Ev-fH7" secondAttribute="bottom" constant="8" id="0Jf-tx-BBM"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nje-S8-qg2" secondAttribute="trailing" constant="20" id="1mJ-p6-hX3"/>
                                                 <constraint firstItem="eBl-Ev-fH7" firstAttribute="top" secondItem="siU-s2-s5m" secondAttribute="top" id="KYd-ue-HeX"/>
                                                 <constraint firstItem="eBl-Ev-fH7" firstAttribute="leading" secondItem="siU-s2-s5m" secondAttribute="leading" id="Q24-aI-HJn"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="n7W-GX-HOf" secondAttribute="bottom" constant="15" id="Qkt-AD-6SL"/>
-                                                <constraint firstAttribute="trailing" secondItem="n7W-GX-HOf" secondAttribute="trailing" constant="10" id="d7D-oC-8Z5"/>
                                                 <constraint firstAttribute="trailing" secondItem="eBl-Ev-fH7" secondAttribute="trailing" id="fD5-H7-S6f"/>
+                                                <constraint firstItem="Nje-S8-qg2" firstAttribute="leading" secondItem="siU-s2-s5m" secondAttribute="leading" constant="20" id="h5C-6Z-yhb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="contentType" destination="bMZ-jx-gdb" id="5Ka-cb-cIM"/>
                                             <outlet property="headline" destination="n7W-GX-HOf" id="BPc-q2-fXn"/>
                                             <outlet property="mainImage" destination="eBl-Ev-fH7" id="26c-pk-8Gh"/>
                                         </connections>
@@ -129,10 +136,9 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4Ib-44-WEq" firstAttribute="top" secondItem="zPv-qT-ruh" secondAttribute="top" id="KZJ-Rb-NeF"/>
-                            <constraint firstItem="Ccd-Wz-hyl" firstAttribute="top" secondItem="4Ib-44-WEq" secondAttribute="bottom" id="q9d-jg-l4o"/>
+                            <constraint firstAttribute="bottom" secondItem="4Ib-44-WEq" secondAttribute="bottom" id="sRS-GJ-hQI"/>
                             <constraint firstAttribute="trailing" secondItem="4Ib-44-WEq" secondAttribute="trailing" id="zOT-4H-d92"/>
                             <constraint firstItem="4Ib-44-WEq" firstAttribute="leading" secondItem="zPv-qT-ruh" secondAttribute="leading" id="zUk-0y-JyF"/>
                         </constraints>
@@ -147,7 +153,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIZ-Kc-dff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015.2" y="808.24587706146929"/>
+            <point key="canvasLocation" x="324" y="775.86206896551732"/>
         </scene>
         <!--Article-->
         <scene sceneID="7Ii-De-pqP">
@@ -235,7 +241,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Skv-0Y-P3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682" y="1585"/>
+            <point key="canvasLocation" x="324" y="1539"/>
         </scene>
         <!--Video-->
         <scene sceneID="tlH-2Q-nSK">
@@ -249,54 +255,51 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ado-nX-Rtr">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Ul-QP-kFQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBp-RY-aem">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9nQ-xO-qXc">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </webView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum dolor sit amet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahu-Yx-iTF">
-                                                <rect key="frame" x="10" y="208" width="355" height="24"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhn-7m-MKs">
-                                                <rect key="frame" x="10" y="264" width="355" height="66.5"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment>
-                                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
-                                                        <attributes>
-                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="February 20, 2017 -- 6:30 a.m. PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppu-eH-Ypl">
-                                                <rect key="frame" x="10" y="240" width="355" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
+                                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9nQ-xO-qXc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                        <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="167" id="pNt-5I-skS"/>
+                                        </constraints>
+                                    </webView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="February 20, 2017 -- 6:30 a.m. PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppu-eH-Ypl">
+                                        <rect key="frame" x="0.0" y="177" width="375" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahu-Yx-iTF">
+                                        <rect key="frame" x="0.0" y="202.5" width="375" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhn-7m-MKs">
+                                        <rect key="frame" x="0.0" y="236.5" width="375" height="366.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                            </scrollView>
+                            </stackView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3Ul-QP-kFQ" secondAttribute="trailing" id="09K-Sg-zes"/>
+                            <constraint firstItem="3Ul-QP-kFQ" firstAttribute="top" secondItem="uwm-2N-jGw" secondAttribute="bottom" id="28L-gs-4Nh"/>
+                            <constraint firstItem="3Ul-QP-kFQ" firstAttribute="leading" secondItem="33a-Xo-kSH" secondAttribute="leading" id="E8X-vK-PTQ"/>
+                            <constraint firstAttribute="bottom" secondItem="3Ul-QP-kFQ" secondAttribute="bottom" id="ozJ-b5-286"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="body" destination="qhn-7m-MKs" id="rP6-eo-62Q"/>
@@ -307,7 +310,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ExU-wx-X2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1430" y="1585"/>
+            <point key="canvasLocation" x="1052" y="1538.6806596701651"/>
         </scene>
         <!--Audio-->
         <scene sceneID="1S3-D4-wF8">
@@ -413,7 +416,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAo-gn-1uD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2134" y="1585"/>
+            <point key="canvasLocation" x="1737" y="1539"/>
         </scene>
         <!--Menu-->
         <scene sceneID="Yh0-Km-BNu">
@@ -460,31 +463,60 @@ Audio</string>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Menu" image="menu-off" id="1YI-tO-uDm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMy-9j-h2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2642" y="36"/>
+            <point key="canvasLocation" x="2042" y="776"/>
         </scene>
         <!--Dropped News-->
         <scene sceneID="P7n-iT-pKU">
             <objects>
-                <navigationController title="Dropped News" automaticallyAdjustsScrollViewInsets="NO" id="98R-HV-CJc" sceneMemberID="viewController">
+                <navigationController title="Dropped News" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="98R-HV-CJc" customClass="NavigationVC" customModule="TVCTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home-off" id="HFw-kv-l8f"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bFI-kI-P06">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Wzf-aP-fiX">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="yXg-n4-DZs" kind="relationship" relationship="rootViewController" id="2sk-gx-DTV"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3q-7V-bEw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="808.24587706146929"/>
+            <point key="canvasLocation" x="-550" y="1539"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VmV-iM-2mX">
+            <objects>
+                <tabBarController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="Ce3-NA-sOr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Xad-Mf-nl7">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="98R-HV-CJc" kind="relationship" relationship="viewControllers" id="kh9-ar-055"/>
+                        <segue destination="STr-qk-xsK" kind="relationship" relationship="viewControllers" id="xTQ-Og-vXg"/>
+                        <segue destination="woc-YH-A4E" kind="relationship" relationship="viewControllers" id="Mhs-eQ-MBs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="URP-zG-ayc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506" y="776"/>
         </scene>
     </scenes>
     <resources>
         <image name="boomboxPexels159613.jpeg" width="2816" height="2112"/>
+        <image name="home-off" width="24" height="23"/>
+        <image name="info-off" width="23" height="24"/>
+        <image name="menu-off" width="24" height="21"/>
+        <image name="newspaper-off" width="24" height="24"/>
     </resources>
 </document>
