@@ -89,14 +89,14 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Nje-S8-qg2">
-                                                    <rect key="frame" x="20" y="183" width="335" height="43"/>
+                                                    <rect key="frame" x="20" y="183" width="335" height="72"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newspaper-off" translatesAutoresizingMaskIntoConstraints="NO" id="bMZ-jx-gdb">
-                                                            <rect key="frame" x="0.0" y="0.0" width="21.5" height="43"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="21.5" height="72"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin Toolbar intends to improve the default Drupal Toolbar" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7W-GX-HOf">
-                                                            <rect key="frame" x="36.5" y="0.0" width="298.5" height="43"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                            <rect key="frame" x="36.5" y="0.0" width="298.5" height="72"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -416,7 +416,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epB-cC-ofm">
-                                <rect key="frame" x="16" y="40" width="343" height="116"/>
+                                <rect key="frame" x="16" y="40" width="343" height="101.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -424,7 +424,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 Videos
 Audio</string>
                                         <attributes>
-                                            <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="6" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -465,10 +465,10 @@ Audio</string>
             </objects>
             <point key="canvasLocation" x="-506" y="776"/>
         </scene>
-        <!--Home-->
+        <!--Dropped News-->
         <scene sceneID="G9Z-W5-6v9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kag-ga-l5c" sceneMemberID="viewController">
+                <navigationController title="Dropped News" automaticallyAdjustsScrollViewInsets="NO" id="Kag-ga-l5c" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="home-off" id="VVu-RN-wX7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XWB-48-6ko">
