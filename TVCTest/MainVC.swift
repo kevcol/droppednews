@@ -130,10 +130,12 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let contentItem = contentItems[indexPath.row]
+      
         
         if contentItem.type == 1 {
-            performSegue(withIdentifier: "ArticleVC", sender: contentItem)
-            
+          
+         performSegue(withIdentifier: "ArticleVC", sender: contentItem)
+         
         } else if contentItem.type == 2 {
           
             performSegue(withIdentifier: "VideoVC", sender: contentItem)

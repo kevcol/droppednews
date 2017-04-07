@@ -30,6 +30,8 @@ class ArticleVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        self.hidesBottomBarWhenPushed = true
         
         mainImage.image = contentItem.mainImage
         headline.text = contentItem.headline
