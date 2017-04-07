@@ -29,11 +29,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvU-Yq-v4B">
-                                <rect key="frame" x="16" y="72" width="343" height="66.5"/>
+                                <rect key="frame" x="16" y="72" width="343" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+                                        <string key="content">Licensing information and such would go here, along with links to documentation for the template, Waterwheel.Swift, Drupal (and maybe Acquia hosting.) </string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
@@ -147,78 +147,103 @@
             <objects>
                 <viewController title="Article" id="fqu-me-yhN" customClass="ArticleVC" customModule="TVCTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XZ8-i4-bpc"/>
-                        <viewControllerLayoutGuide type="bottom" id="BQk-qr-NvL"/>
+                        <viewControllerLayoutGuide type="top" id="rdG-Oq-5Bb"/>
+                        <viewControllerLayoutGuide type="bottom" id="TIe-rM-T12"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MQD-w0-ESH">
+                    <view key="view" contentMode="scaleToFill" id="VUx-En-368">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="81V-Ab-Mzv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="175"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="175" id="uOR-Mb-1BU"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="February 20, 2017 -- 6:30 a.m. PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEQ-9I-OYV">
-                                <rect key="frame" x="16" y="247" width="343" height="16"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXP-TM-Kfg">
-                                <rect key="frame" x="16" y="271" width="343" height="48"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Scoop Reporter / Organization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt8-3j-f9N">
-                                <rect key="frame" x="16" y="327" width="343" height="16"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJM-J8-bmZ">
-                                <rect key="frame" x="16" y="351" width="343" height="793.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2q-GM-su3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQD-w0-ESH">
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="682"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="81V-Ab-Mzv">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="175" id="uOR-Mb-1BU"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="February 20, 2017 -- 6:30 a.m. PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEQ-9I-OYV">
+                                                <rect key="frame" x="8" y="183" width="359" height="16"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXP-TM-Kfg">
+                                                <rect key="frame" x="8" y="207" width="359" height="48"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Scoop Reporter / Organization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt8-3j-f9N">
+                                                <rect key="frame" x="8" y="263" width="359" height="16"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJM-J8-bmZ">
+                                                <rect key="frame" x="8" y="287" width="359" height="760"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 </string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolcu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="6" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolcu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="6" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="qt8-3j-f9N" firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailingMargin" id="2Uh-lF-1ka"/>
+                                            <constraint firstAttribute="trailing" secondItem="81V-Ab-Mzv" secondAttribute="trailing" id="6bY-yo-NGa"/>
+                                            <constraint firstItem="HEQ-9I-OYV" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leadingMargin" id="9Ux-5U-If9"/>
+                                            <constraint firstItem="LXP-TM-Kfg" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leadingMargin" id="9kb-bU-VeK"/>
+                                            <constraint firstItem="RJM-J8-bmZ" firstAttribute="top" secondItem="qt8-3j-f9N" secondAttribute="bottom" constant="8" id="EdQ-kx-dcv"/>
+                                            <constraint firstItem="qt8-3j-f9N" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leadingMargin" id="Or4-pS-L0i"/>
+                                            <constraint firstItem="RJM-J8-bmZ" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leadingMargin" id="Skx-zs-Bb7"/>
+                                            <constraint firstItem="HEQ-9I-OYV" firstAttribute="top" secondItem="81V-Ab-Mzv" secondAttribute="bottom" constant="8" id="cRS-Fu-rSz"/>
+                                            <constraint firstItem="81V-Ab-Mzv" firstAttribute="top" secondItem="MQD-w0-ESH" secondAttribute="top" id="ehB-yu-VhU"/>
+                                            <constraint firstItem="qt8-3j-f9N" firstAttribute="top" secondItem="LXP-TM-Kfg" secondAttribute="bottom" constant="8" id="jN4-EG-Zko"/>
+                                            <constraint firstItem="LXP-TM-Kfg" firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailingMargin" id="n9Q-Wq-x6D"/>
+                                            <constraint firstItem="81V-Ab-Mzv" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leading" id="sVy-qj-Coe"/>
+                                            <constraint firstItem="HEQ-9I-OYV" firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailingMargin" id="u8r-if-3n9"/>
+                                            <constraint firstItem="LXP-TM-Kfg" firstAttribute="top" secondItem="HEQ-9I-OYV" secondAttribute="bottom" constant="8" id="uKY-Aa-KvE"/>
+                                            <constraint firstItem="RJM-J8-bmZ" firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailingMargin" id="ypg-cQ-jM5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MQD-w0-ESH" firstAttribute="top" secondItem="c2q-GM-su3" secondAttribute="top" constant="-64" id="5wz-s7-vHZ"/>
+                                    <constraint firstItem="MQD-w0-ESH" firstAttribute="centerY" secondItem="c2q-GM-su3" secondAttribute="centerY" id="7TK-fO-hMJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="MQD-w0-ESH" secondAttribute="bottom" constant="-56" id="KpT-Aq-ogz"/>
+                                    <constraint firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailing" id="kbI-Ly-GaR"/>
+                                    <constraint firstItem="MQD-w0-ESH" firstAttribute="leading" secondItem="c2q-GM-su3" secondAttribute="leading" id="vWw-Lp-cJX"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qt8-3j-f9N" firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailingMargin" id="2Uh-lF-1ka"/>
-                            <constraint firstAttribute="trailing" secondItem="81V-Ab-Mzv" secondAttribute="trailing" id="6bY-yo-NGa"/>
-                            <constraint firstItem="HEQ-9I-OYV" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leadingMargin" id="9Ux-5U-If9"/>
-                            <constraint firstItem="LXP-TM-Kfg" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leadingMargin" id="9kb-bU-VeK"/>
-                            <constraint firstItem="RJM-J8-bmZ" firstAttribute="top" secondItem="qt8-3j-f9N" secondAttribute="bottom" constant="8" id="EdQ-kx-dcv"/>
-                            <constraint firstItem="qt8-3j-f9N" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leadingMargin" id="Or4-pS-L0i"/>
-                            <constraint firstItem="RJM-J8-bmZ" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leadingMargin" id="Skx-zs-Bb7"/>
-                            <constraint firstItem="81V-Ab-Mzv" firstAttribute="top" secondItem="XZ8-i4-bpc" secondAttribute="bottom" id="WfN-HI-iGf"/>
-                            <constraint firstItem="HEQ-9I-OYV" firstAttribute="top" secondItem="81V-Ab-Mzv" secondAttribute="bottom" constant="8" id="cRS-Fu-rSz"/>
-                            <constraint firstItem="qt8-3j-f9N" firstAttribute="top" secondItem="LXP-TM-Kfg" secondAttribute="bottom" constant="8" id="jN4-EG-Zko"/>
-                            <constraint firstItem="LXP-TM-Kfg" firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailingMargin" id="n9Q-Wq-x6D"/>
-                            <constraint firstItem="81V-Ab-Mzv" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leading" id="sVy-qj-Coe"/>
-                            <constraint firstItem="HEQ-9I-OYV" firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailingMargin" id="u8r-if-3n9"/>
-                            <constraint firstItem="LXP-TM-Kfg" firstAttribute="top" secondItem="HEQ-9I-OYV" secondAttribute="bottom" constant="8" id="uKY-Aa-KvE"/>
-                            <constraint firstItem="RJM-J8-bmZ" firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailingMargin" id="ypg-cQ-jM5"/>
+                            <constraint firstAttribute="trailing" secondItem="c2q-GM-su3" secondAttribute="trailing" id="C14-eX-0l3"/>
+                            <constraint firstItem="c2q-GM-su3" firstAttribute="top" secondItem="rdG-Oq-5Bb" secondAttribute="bottom" id="IHZ-Gs-EGD"/>
+                            <constraint firstItem="TIe-rM-T12" firstAttribute="top" secondItem="c2q-GM-su3" secondAttribute="bottom" id="K0s-tP-j23"/>
+                            <constraint firstItem="c2q-GM-su3" firstAttribute="leading" secondItem="VUx-En-368" secondAttribute="leading" id="U5F-b0-squ"/>
+                            <constraint firstItem="MQD-w0-ESH" firstAttribute="width" secondItem="VUx-En-368" secondAttribute="width" id="UJm-oG-6BB"/>
                         </constraints>
                     </view>
                     <connections>
