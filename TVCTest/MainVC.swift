@@ -22,51 +22,62 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
        
         
         let c1 = ContentItem(type: 1,
-                             mainImage: #imageLiteral(resourceName: "whiteHouse"),
-                             headline: "This is a nice radio. Play some Beastie Boys",
+                             mainImage: #imageLiteral(resourceName: "drupalconParis"),
+                             headline: "Use the power of Drupal to elevate your iOS apps",
                              timestamp: "March 30, 2017 -- 7:00 am PDT",
-                             byline: "By Larry / DroppedNews",
-                             body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                             byline: "By Nathan Node / DroppedNews",
+                             body: "Lorem ipsum bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                              audioName: "",
-                             videoName: ""
+                             videoName: "",
+                             photoCredit: "Andrey Pshenichny/Flickr",
+                             photoCaption: "DrupalCon Paris 2009"
                              )
         
         let c2 = ContentItem(type: 2,
                              mainImage: #imageLiteral(resourceName: "drupalcon1"),
-                             headline: "This here is a video. Watch it now",
+                             headline: "Watch Dries Buytaert address DrupalCon Dublin 2016",
                              timestamp: "March 30, 2017 -- 7:00 am PDT",
-                             byline: "By Larry / DroppedNews",
-                             body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                             byline: "By Erin Entity / DroppedNews",
+                             body: "We hope you enjoyed your DrupalCon experience in Dublin.  We had an incredible week with the community full of sharing, sessions, and sprinting!",
                              audioName: "",
-                             videoName: "")
+                             videoName: "",
+                             photoCredit: "",
+                             photoCaption: "")
         
-        let c3 = ContentItem(type: 3,
-                             mainImage: #imageLiteral(resourceName: "drupalcon2"),
-                             headline: "Linkit provides an easy interface for internal and external linking",
-                             timestamp: "March 30, 2017 -- 7:00 am PDT",
-                             byline: "By Larry / DroppedNews",
-                             body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-                             audioName: "",
-                             videoName: "eQLzrlMeySU")
+      let c3 = ContentItem(type: 1,
+                           mainImage: #imageLiteral(resourceName: "drupalConAmsterdam"),
+                           headline: "Young talent shines at DrupalCon Amsterdam",
+                           timestamp: "March 30, 2017 -- 7:00 am PDT",
+                           byline: "By Thomas Taxonomy / DroppedNews",
+                           body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                           audioName: "",
+                           videoName: "",
+                           photoCredit: "",
+                           photoCaption: "")
+      
+      let c4 =  ContentItem(type: 3,
+                            mainImage: #imageLiteral(resourceName: "drupalConPortland"),
+                            headline: "We liked DrupalCon Portland before it was cool",
+                            timestamp: "March 30, 2017 -- 7:00 am PDT",
+                            byline: "By Terry Twig / DroppedNews",
+                            body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                            audioName: "",
+                            videoName: "eQLzrlMeySU",
+                            photoCredit: "",
+                            photoCaption: "")
+
         
-        let c4 = ContentItem(type: 1,
-                             mainImage: #imageLiteral(resourceName: "drupalcon2"),
-                             headline: "Scooby dooby doo where are you? Someone something somehow",
-                             timestamp: "March 30, 2017 -- 7:00 am PDT",
-                             byline: "By Larry / DroppedNews",
-                             body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-                             audioName: "",
-                             videoName: "")
-        
-        let c5 = ContentItem(type: 1,
-                             mainImage: #imageLiteral(resourceName: "drupalcon2"),
-                             headline: "Sugar honey ice tea this is just a dummy headline",
-                             timestamp: "March 30, 2017 -- 7:00 am PDT",
-                             byline: "By Larry / DroppedNews",
-                             body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-                             audioName: "",
-                             videoName: "")
-        
+      let c5 = ContentItem(type: 1,
+                           mainImage: #imageLiteral(resourceName: "drupalConBarcelona"),
+                           headline: "Something or other about DrupalCon Barcelona",
+                           timestamp: "March 30, 2017 -- 7:00 am PDT",
+                           byline: "By Corrine Content-Type / DroppedNews",
+                           body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                           audioName: "",
+                           videoName: "",
+                           photoCredit: "Photo by Trav Williams, Broken Banjo Photography via Flickr",
+                           photoCaption: "DrupalCon 2013, Portland")
+      
         contentItems.append(c1)
         contentItems.append(c2)
         contentItems.append(c3)
@@ -124,12 +135,12 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             performSegue(withIdentifier: "ArticleVC", sender: contentItem)
             
         } else if contentItem.type == 2 {
-            print("WHAT THE DEUCE?")
+          
             performSegue(withIdentifier: "VideoVC", sender: contentItem)
             
         } else if contentItem.type == 3 {
             performSegue(withIdentifier: "AudioVC", sender: contentItem)
-            print("LOAD AUDIO")
+           
         }
         
     }

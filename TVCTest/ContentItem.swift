@@ -19,8 +19,10 @@ class ContentItem {
     private var _type: Int!
     private var _audioName: String!
     private var _videoName: String!
-    
-    
+    private var _photoCaption: String!
+    private var _photoCredit: String!
+
+  
     var mainImage: UIImage {
         return _mainImage
     }
@@ -48,15 +50,22 @@ class ContentItem {
     var audioName: String {
         return _audioName
     }
-    
-    
+        
     var videoName: String {
         return _videoName
     }
-    
-    
-    
-    init(type: Int, mainImage: UIImage, headline: String!, timestamp: String!, byline: String!, body: String!, audioName: String?, videoName: String?) {
+  
+    var photoCredit: String {
+        return _photoCredit
+    }
+  
+    var photoCaption: String {
+        return _photoCaption
+    }
+  
+  
+  
+  init(type: Int, mainImage: UIImage, headline: String!, timestamp: String!, byline: String!, body: String!, audioName: String?, videoName: String?, photoCredit:String?, photoCaption: String?) {
         _type = type
         _mainImage = mainImage
         _headline = headline
@@ -65,5 +74,7 @@ class ContentItem {
         _body = body
         _audioName = audioName
         _videoName = videoName
+        _photoCaption = photoCaption
+        _photoCredit  = photoCredit
     }
 }

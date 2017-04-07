@@ -8,9 +8,11 @@
 
 import UIKit
 
-class VideoVC: UIViewController {
+class VideoVC: UIViewController, UIWebViewDelegate {
     
-    @IBOutlet weak var ytWebView: UIWebView!
+  @IBOutlet weak var shade: UIView!
+  @IBOutlet weak var spin: UIActivityIndicatorView!
+    @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var headline: UILabel!
     @IBOutlet weak var timestamp: UILabel!
     @IBOutlet weak var body: UITextView!
@@ -34,6 +36,8 @@ class VideoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        webView.delegate = self
         
         headline.text = contentItem.headline
         timestamp.text = contentItem.timestamp
@@ -42,16 +46,26 @@ class VideoVC: UIViewController {
        
 
         // Do any additional setup after loading the view.
-        getVideo(videoCode: "eQLzrlMeySU")
+        //getVideo(videoCode: "eQLzrlMeySU")
+        loadYouTube(videoID: "eQLzrlMeySU")
+    }
+  
+  
+  func loadYouTube(videoID: String) {
+    guard
+      let youtubeURL = URL(string: "https://www.youtube.com/embed/\(videoID)?rel=0&amp;showinfo=0")
+      else {
+      return
     }
     
-    
+    webView.loadRequest(URLRequest(url: youtubeURL))
+  }
 
     
    func getVideo(videoCode:String) {
     
     let url = URL(string: "https://www.youtube.com/embed/\(videoCode)")
-    ytWebView.loadRequest(URLRequest(url: url!))
+    webView.loadRequest(URLRequest(url: url!))
     
     }
 
@@ -59,7 +73,16 @@ class VideoVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+  
+  func webViewDidStartLoad(_ webView: UIWebView) {
+   
+  }
+  
+  func webViewDidFinishLoad(_ webView: UIWebView) {
+    shade.alpha = 0.0
+    spin.alpha = 0.0
+    print("LOADSSSSSSS")
+  }
 
    
 }

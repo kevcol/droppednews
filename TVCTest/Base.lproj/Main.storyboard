@@ -128,7 +128,9 @@
                             <constraint firstItem="4Ib-44-WEq" firstAttribute="leading" secondItem="zPv-qT-ruh" secondAttribute="leading" id="zUk-0y-JyF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="DroppedNews" id="00s-Ob-4TH"/>
+                    <navigationItem key="navigationItem" title="DroppedNews" id="00s-Ob-4TH">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Seg-AZ-gFa"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="4Ib-44-WEq" id="SkY-q3-Rvx"/>
                         <segue destination="fqu-me-yhN" kind="show" identifier="ArticleVC" id="SM0-ro-x7A"/>
@@ -243,62 +245,78 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Ul-QP-kFQ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <subviews>
-                                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9nQ-xO-qXc">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
-                                        <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="167" id="pNt-5I-skS"/>
-                                        </constraints>
-                                    </webView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="February 20, 2017 -- 6:30 a.m. PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppu-eH-Ypl">
-                                        <rect key="frame" x="0.0" y="177" width="375" height="15.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahu-Yx-iTF">
-                                        <rect key="frame" x="0.0" y="202.5" width="375" height="24"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhn-7m-MKs">
-                                        <rect key="frame" x="0.0" y="236.5" width="375" height="366.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
-                                                <attributes>
-                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="February 20, 2017 -- 6:30 a.m. PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppu-eH-Ypl">
+                                <rect key="frame" x="16" y="279" width="343" height="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahu-Yx-iTF">
+                                <rect key="frame" x="16" y="303" width="343" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhn-7m-MKs">
+                                <rect key="frame" x="16" y="335" width="343" height="66.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWc-pq-yoY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Ggv-Z2-ZUW"/>
+                                </constraints>
+                            </webView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m93-6z-U4h">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
+                            </view>
+                            <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dju-SP-ZVk">
+                                <rect key="frame" x="177" y="154" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="3Ul-QP-kFQ" secondAttribute="trailing" id="09K-Sg-zes"/>
-                            <constraint firstItem="3Ul-QP-kFQ" firstAttribute="top" secondItem="uwm-2N-jGw" secondAttribute="bottom" id="28L-gs-4Nh"/>
-                            <constraint firstItem="3Ul-QP-kFQ" firstAttribute="leading" secondItem="33a-Xo-kSH" secondAttribute="leading" id="E8X-vK-PTQ"/>
-                            <constraint firstAttribute="bottom" secondItem="3Ul-QP-kFQ" secondAttribute="bottom" id="ozJ-b5-286"/>
+                            <constraint firstItem="CWc-pq-yoY" firstAttribute="top" secondItem="uwm-2N-jGw" secondAttribute="bottom" id="4s8-vp-FVl"/>
+                            <constraint firstAttribute="trailing" secondItem="CWc-pq-yoY" secondAttribute="trailing" id="6oN-OQ-Xde"/>
+                            <constraint firstItem="CWc-pq-yoY" firstAttribute="leading" secondItem="33a-Xo-kSH" secondAttribute="leading" id="Cee-AG-IAn"/>
+                            <constraint firstItem="Ppu-eH-Ypl" firstAttribute="top" secondItem="CWc-pq-yoY" secondAttribute="bottom" constant="15" id="GiK-0V-33I"/>
+                            <constraint firstItem="qhn-7m-MKs" firstAttribute="top" secondItem="Ahu-Yx-iTF" secondAttribute="bottom" constant="8" id="N8f-mE-VJN"/>
+                            <constraint firstItem="qhn-7m-MKs" firstAttribute="leading" secondItem="33a-Xo-kSH" secondAttribute="leadingMargin" id="RVw-L0-k6j"/>
+                            <constraint firstItem="qhn-7m-MKs" firstAttribute="trailing" secondItem="33a-Xo-kSH" secondAttribute="trailingMargin" id="c6i-LA-5jq"/>
+                            <constraint firstItem="Ahu-Yx-iTF" firstAttribute="top" secondItem="Ppu-eH-Ypl" secondAttribute="bottom" constant="8" id="fym-GZ-aSZ"/>
+                            <constraint firstItem="Ahu-Yx-iTF" firstAttribute="leading" secondItem="33a-Xo-kSH" secondAttribute="leadingMargin" id="if4-K9-FeB"/>
+                            <constraint firstItem="Ahu-Yx-iTF" firstAttribute="trailing" secondItem="33a-Xo-kSH" secondAttribute="trailingMargin" id="mhU-eV-mh1"/>
+                            <constraint firstItem="Ppu-eH-Ypl" firstAttribute="trailing" secondItem="33a-Xo-kSH" secondAttribute="trailingMargin" id="uKg-p1-3RY"/>
+                            <constraint firstItem="Ppu-eH-Ypl" firstAttribute="leading" secondItem="33a-Xo-kSH" secondAttribute="leadingMargin" id="v1k-oC-G71"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="body" destination="qhn-7m-MKs" id="rP6-eo-62Q"/>
                         <outlet property="headline" destination="Ahu-Yx-iTF" id="dd8-M7-m28"/>
+                        <outlet property="shade" destination="m93-6z-U4h" id="tRK-ch-ut9"/>
+                        <outlet property="spin" destination="dju-SP-ZVk" id="CtJ-z8-kYc"/>
                         <outlet property="timestamp" destination="Ppu-eH-Ypl" id="k4L-cB-eTL"/>
-                        <outlet property="ytWebView" destination="9nQ-xO-qXc" id="2eb-tj-fqV"/>
+                        <outlet property="webView" destination="CWc-pq-yoY" id="KjN-UK-GQ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ExU-wx-X2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1222" y="2206"/>
+            <point key="canvasLocation" x="-1223.2" y="2205.2473763118442"/>
         </scene>
         <!--Audio-->
         <scene sceneID="1S3-D4-wF8">
