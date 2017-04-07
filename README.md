@@ -9,5 +9,10 @@ This version uses static data.  Version 1.0 -- coming soon -- will be powered by
 
 Suggestions, feature-requests and PRs welcome
 
-#Screenshots
 ![Alt text](https://www.evernote.com/shard/s578/sh/072cf0f5-f4f5-4ae2-89c4-e6e43933474a/8fd3d73b9490e240/res/35ee7595-60eb-401c-bff8-27e0a47df070/skitch.png?resizeSmall&width=832 "Home screen")
+
+![Alt text](https://www.evernote.com/l/AkLR0QdotURCqpuDya3CNyHwCyH9AQIdnQc "Video screen")
+
+![Alt text](https://www.evernote.com/l/AkI3Orhj-19AKJt2pvNFy5Ij1Uu0K8LYqIU "Audio screen")
+
+![Alt text](https://www.evernote.com/l/AkJWtwXAJU5P8qF9xxy7tuwgb9iU-ahfInI "Article screen")
