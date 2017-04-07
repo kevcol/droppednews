@@ -8,15 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		173ADBD91E976352002C20B1 /* drupalconParis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 173ADBD81E976352002C20B1 /* drupalconParis.jpg */; };
-		970F338B1E8DA69A00CA467D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970F33891E8DA69A00CA467D /* TableViewCell.swift */; };
-		970F338C1E8DA69A00CA467D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 970F338A1E8DA69A00CA467D /* TableViewCell.xib */; };
 		9760349A1E64F45500D82937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976034991E64F45500D82937 /* AppDelegate.swift */; };
 		9760349C1E64F45500D82937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9760349B1E64F45500D82937 /* ViewController.swift */; };
 		9760349F1E64F45500D82937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9760349D1E64F45500D82937 /* Main.storyboard */; };
 		976034A11E64F45500D82937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 976034A01E64F45500D82937 /* Assets.xcassets */; };
 		976034A41E64F45500D82937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976034A21E64F45500D82937 /* LaunchScreen.storyboard */; };
-		976034AC1E64FC2900D82937 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976034AB1E64FC2900D82937 /* CardCell.swift */; };
-		976034AE1E650CC800D82937 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976034AD1E650CC800D82937 /* HomeViewController.swift */; };
 		9762451D1E8DEAA5006C8878 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9762451C1E8DEAA5006C8878 /* MainVC.swift */; };
 		9762451F1E8DEDC4006C8878 /* PrimaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9762451E1E8DEDC4006C8878 /* PrimaryCell.swift */; };
 		976245211E8DF095006C8878 /* ContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976245201E8DF095006C8878 /* ContentItem.swift */; };
@@ -32,8 +28,6 @@
 
 /* Begin PBXFileReference section */
 		173ADBD81E976352002C20B1 /* drupalconParis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drupalconParis.jpg; sourceTree = "<group>"; };
-		970F33891E8DA69A00CA467D /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		970F338A1E8DA69A00CA467D /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		976034961E64F45500D82937 /* TVCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976034991E64F45500D82937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9760349B1E64F45500D82937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,8 +35,6 @@
 		976034A01E64F45500D82937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		976034A31E64F45500D82937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		976034A51E64F45500D82937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		976034AB1E64FC2900D82937 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
-		976034AD1E650CC800D82937 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = TVCTest/HomeViewController.swift; sourceTree = "<group>"; };
 		9762451C1E8DEAA5006C8878 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		9762451E1E8DEDC4006C8878 /* PrimaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryCell.swift; sourceTree = "<group>"; };
 		976245201E8DF095006C8878 /* ContentItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentItem.swift; sourceTree = "<group>"; };
@@ -70,7 +62,6 @@
 		9760348D1E64F45400D82937 = {
 			isa = PBXGroup;
 			children = (
-				976245221E8EDE23006C8878 /* Deprecated */,
 				976034981E64F45500D82937 /* TVCTest */,
 				976034971E64F45500D82937 /* Products */,
 			);
@@ -97,9 +88,6 @@
 				976034A01E64F45500D82937 /* Assets.xcassets */,
 				976034A21E64F45500D82937 /* LaunchScreen.storyboard */,
 				976034A51E64F45500D82937 /* Info.plist */,
-				976034AB1E64FC2900D82937 /* CardCell.swift */,
-				970F33891E8DA69A00CA467D /* TableViewCell.swift */,
-				970F338A1E8DA69A00CA467D /* TableViewCell.xib */,
 			);
 			path = TVCTest;
 			sourceTree = "<group>";
@@ -130,14 +118,6 @@
 				97FDC8761E8F301B00871D04 /* NavigationVC.swift */,
 			);
 			name = Controller;
-			sourceTree = "<group>";
-		};
-		976245221E8EDE23006C8878 /* Deprecated */ = {
-			isa = PBXGroup;
-			children = (
-				976034AD1E650CC800D82937 /* HomeViewController.swift */,
-			);
-			name = Deprecated;
 			sourceTree = "<group>";
 		};
 		9768CB8B1E67A60E0067AF5A /* Media */ = {
@@ -234,7 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				976034A41E64F45500D82937 /* LaunchScreen.storyboard in Resources */,
-				970F338C1E8DA69A00CA467D /* TableViewCell.xib in Resources */,
 				9768CB941E67A63F0067AF5A /* drupalcon1.jpg in Resources */,
 				9768CB921E67A63F0067AF5A /* drupalcon2.jpg in Resources */,
 				173ADBD91E976352002C20B1 /* drupalconParis.jpg in Resources */,
@@ -252,8 +231,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				976034AE1E650CC800D82937 /* HomeViewController.swift in Sources */,
-				970F338B1E8DA69A00CA467D /* TableViewCell.swift in Sources */,
 				9760349C1E64F45500D82937 /* ViewController.swift in Sources */,
 				976245241E8EDE71006C8878 /* ArticleVC.swift in Sources */,
 				9762451F1E8DEDC4006C8878 /* PrimaryCell.swift in Sources */,
@@ -261,7 +238,6 @@
 				97FDC8771E8F301B00871D04 /* NavigationVC.swift in Sources */,
 				97710F9E1E67AE4B00D75DC0 /* VideoVC.swift in Sources */,
 				9762451D1E8DEAA5006C8878 /* MainVC.swift in Sources */,
-				976034AC1E64FC2900D82937 /* CardCell.swift in Sources */,
 				976245211E8DF095006C8878 /* ContentItem.swift in Sources */,
 				97710FA01E68DD5C00D75DC0 /* AudioVC.swift in Sources */,
 			);
