@@ -11,8 +11,8 @@ Suggestions, feature-requests and PRs welcome
 
 ![Alt text](https://www.evernote.com/shard/s578/sh/072cf0f5-f4f5-4ae2-89c4-e6e43933474a/8fd3d73b9490e240/res/35ee7595-60eb-401c-bff8-27e0a47df070/skitch.png?resizeSmall&width=832 "Home screen")
 
-![Alt text](https://www.evernote.com/l/AkLR0QdotURCqpuDya3CNyHwCyH9AQIdnQc "Video screen")
+![Alt text](https://www.evernote.com/shard/s578/sh/d1d10768-b544-42aa-9b83-c9adc23721f0/0b21fd01021d9d07/res/1d38b2ed-4467-4dd6-a80e-938ea7ac2ffa/skitch.png?resizeSmall&width=832 "Video screen")
 
-![Alt text](https://www.evernote.com/l/AkI3Orhj-19AKJt2pvNFy5Ij1Uu0K8LYqIU "Audio screen")
+![Alt text](https://www.evernote.com/shard/s578/sh/373ab863-fb5f-4028-9b76-a6f345cb9223/d54bb42bc2d8a885/res/11f8cb1e-43e3-412b-97ec-d42e4d3119b5/skitch.png?resizeSmall&width=832 "Audio screen")
 
-![Alt text](https://www.evernote.com/l/AkJWtwXAJU5P8qF9xxy7tuwgb9iU-ahfInI "Article screen")
+![Alt text](https://www.evernote.com/shard/s578/sh/56b705c0-254e-4ff2-a17d-c71cbbb6ec20/6fd894f9a85f2272/res/0d70869d-d28e-4cb3-890b-282bd5319351/skitch.png?resizeSmall&width=832 "Article screen")
