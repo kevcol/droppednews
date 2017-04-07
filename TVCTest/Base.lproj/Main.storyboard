@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="370" y="776"/>
         </scene>
-        <!--Dropped News-->
+        <!--Main-->
         <scene sceneID="8uk-1y-WeR">
             <objects>
-                <viewController title="Dropped News" id="yXg-n4-DZs" customClass="MainVC" customModule="TVCTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main" id="yXg-n4-DZs" customClass="MainVC" customModule="TVCTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ik6-vE-wFk"/>
                         <viewControllerLayoutGuide type="bottom" id="Ccd-Wz-hyl"/>
@@ -89,13 +89,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Nje-S8-qg2">
-                                                    <rect key="frame" x="20" y="183" width="335" height="72"/>
+                                                    <rect key="frame" x="20" y="183" width="335" height="48"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newspaper-off" translatesAutoresizingMaskIntoConstraints="NO" id="bMZ-jx-gdb">
-                                                            <rect key="frame" x="0.0" y="0.0" width="21.5" height="72"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="21.5" height="48"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin Toolbar intends to improve the default Drupal Toolbar" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7W-GX-HOf">
-                                                            <rect key="frame" x="36.5" y="0.0" width="298.5" height="72"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin Toolbar intends to improve the default Drupal" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7W-GX-HOf">
+                                                            <rect key="frame" x="36.5" y="0.0" width="298.5" height="48"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -128,7 +128,7 @@
                             <constraint firstItem="4Ib-44-WEq" firstAttribute="leading" secondItem="zPv-qT-ruh" secondAttribute="leading" id="zUk-0y-JyF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ADb-bg-R3I"/>
+                    <navigationItem key="navigationItem" title="DroppedNews" id="00s-Ob-4TH"/>
                     <connections>
                         <outlet property="tableView" destination="4Ib-44-WEq" id="SkY-q3-Rvx"/>
                         <segue destination="fqu-me-yhN" kind="show" identifier="ArticleVC" id="SM0-ro-x7A"/>
@@ -138,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIZ-Kc-dff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="432.80000000000001" y="1483.8080959520241"/>
+            <point key="canvasLocation" x="446" y="1484"/>
         </scene>
         <!--Article-->
         <scene sceneID="7Ii-De-pqP">
@@ -152,69 +152,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vDw-aN-qcg">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rGe-q7-vP4">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXP-TM-Kfg">
-                                                <rect key="frame" x="10" y="195" width="355" height="48"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJM-J8-bmZ">
-                                                <rect key="frame" x="10" y="299" width="355" height="777"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment>
-                                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="81V-Ab-Mzv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="uOR-Mb-1BU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="February 20, 2017 -- 6:30 a.m. PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEQ-9I-OYV">
+                                <rect key="frame" x="16" y="247" width="343" height="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXP-TM-Kfg">
+                                <rect key="frame" x="16" y="271" width="343" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Scoop Reporter / Organization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt8-3j-f9N">
+                                <rect key="frame" x="16" y="327" width="343" height="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJM-J8-bmZ">
+                                <rect key="frame" x="16" y="351" width="343" height="793.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 </string>
-                                                        <attributes>
-                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment>
-                                                        <string key="content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolcu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                        <attributes>
-                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="6" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="81V-Ab-Mzv">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="February 20, 2017 -- 6:30 a.m. PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEQ-9I-OYV">
-                                                <rect key="frame" x="10" y="251" width="355" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By Scoop Reporter / Organization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt8-3j-f9N">
-                                                <rect key="frame" x="10" y="275" width="355" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                            </scrollView>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolcu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="6" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qt8-3j-f9N" firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailingMargin" id="2Uh-lF-1ka"/>
+                            <constraint firstAttribute="trailing" secondItem="81V-Ab-Mzv" secondAttribute="trailing" id="6bY-yo-NGa"/>
+                            <constraint firstItem="HEQ-9I-OYV" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leadingMargin" id="9Ux-5U-If9"/>
+                            <constraint firstItem="LXP-TM-Kfg" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leadingMargin" id="9kb-bU-VeK"/>
+                            <constraint firstItem="RJM-J8-bmZ" firstAttribute="top" secondItem="qt8-3j-f9N" secondAttribute="bottom" constant="8" id="EdQ-kx-dcv"/>
+                            <constraint firstItem="qt8-3j-f9N" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leadingMargin" id="Or4-pS-L0i"/>
+                            <constraint firstItem="RJM-J8-bmZ" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leadingMargin" id="Skx-zs-Bb7"/>
+                            <constraint firstItem="81V-Ab-Mzv" firstAttribute="top" secondItem="XZ8-i4-bpc" secondAttribute="bottom" id="WfN-HI-iGf"/>
+                            <constraint firstItem="HEQ-9I-OYV" firstAttribute="top" secondItem="81V-Ab-Mzv" secondAttribute="bottom" constant="8" id="cRS-Fu-rSz"/>
+                            <constraint firstItem="qt8-3j-f9N" firstAttribute="top" secondItem="LXP-TM-Kfg" secondAttribute="bottom" constant="8" id="jN4-EG-Zko"/>
+                            <constraint firstItem="LXP-TM-Kfg" firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailingMargin" id="n9Q-Wq-x6D"/>
+                            <constraint firstItem="81V-Ab-Mzv" firstAttribute="leading" secondItem="MQD-w0-ESH" secondAttribute="leading" id="sVy-qj-Coe"/>
+                            <constraint firstItem="HEQ-9I-OYV" firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailingMargin" id="u8r-if-3n9"/>
+                            <constraint firstItem="LXP-TM-Kfg" firstAttribute="top" secondItem="HEQ-9I-OYV" secondAttribute="bottom" constant="8" id="uKY-Aa-KvE"/>
+                            <constraint firstItem="RJM-J8-bmZ" firstAttribute="trailing" secondItem="MQD-w0-ESH" secondAttribute="trailingMargin" id="ypg-cQ-jM5"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="body" destination="RJM-J8-bmZ" id="rXO-kk-pRB"/>
@@ -226,7 +229,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Skv-0Y-P3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-506" y="2207"/>
+            <point key="canvasLocation" x="-506.39999999999998" y="2206.1469265367318"/>
         </scene>
         <!--Video-->
         <scene sceneID="tlH-2Q-nSK">
@@ -309,99 +312,106 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kwv-Pg-zee">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boomboxPexels159613.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="oDJ-Cd-vYB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="yAG-VD-cAo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhF-N2-2hx">
+                                <rect key="frame" x="16" y="385" width="343" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="February 20, 2017 -- 6:30 a.m. PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjC-76-PxL">
+                                <rect key="frame" x="16" y="362" width="343" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BqP-V7-Rp8">
+                                <rect key="frame" x="16" y="297" width="343" height="57"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ffw-EU-lXJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boomboxPexels159613.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="oDJ-Cd-vYB">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum dolor sit amet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhF-N2-2hx">
-                                                <rect key="frame" x="10" y="287" width="355" height="24"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C09-gM-Ion">
-                                                <rect key="frame" x="10" y="341" width="355" height="66.5"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment>
-                                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
-                                                        <attributes>
-                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="February 20, 2017 -- 6:30 a.m. PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjC-76-PxL">
-                                                <rect key="frame" x="8" y="329" width="355" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsH-p3-JZ1">
-                                                <rect key="frame" x="43" y="212" width="54" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back 15"/>
-                                                <connections>
-                                                    <action selector="rwd15:" destination="zDo-z1-y0a" eventType="touchUpInside" id="pb8-L6-tzg"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hh8-c5-KWY">
-                                                <rect key="frame" x="269" y="212" width="54" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="FWD 15"/>
-                                                <connections>
-                                                    <action selector="fwd15:" destination="zDo-z1-y0a" eventType="touchUpInside" id="Ex7-7F-EEV"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvc-ty-dBZ">
-                                                <rect key="frame" x="163" y="221" width="48" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="PAUSE"/>
-                                                <connections>
-                                                    <action selector="Pause:" destination="zDo-z1-y0a" eventType="touchUpInside" id="7ek-lt-gBr"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acp-xn-WRP">
-                                                <rect key="frame" x="167" y="183" width="36" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="PLAY"/>
-                                                <connections>
-                                                    <action selector="Play:" destination="zDo-z1-y0a" eventType="touchUpInside" id="htF-cB-FXH"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsH-p3-JZ1">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="57"/>
+                                        <state key="normal" image="rew15"/>
+                                        <connections>
+                                            <action selector="rwd15:" destination="zDo-z1-y0a" eventType="touchUpInside" id="pb8-L6-tzg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acp-xn-WRP">
+                                        <rect key="frame" x="114.5" y="0.0" width="114" height="57"/>
+                                        <state key="normal" image="play"/>
+                                        <connections>
+                                            <action selector="Play:" destination="zDo-z1-y0a" eventType="touchUpInside" id="htF-cB-FXH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hh8-c5-KWY">
+                                        <rect key="frame" x="228.5" y="0.0" width="114.5" height="57"/>
+                                        <state key="normal" image="ff15"/>
+                                        <connections>
+                                            <action selector="fwd15:" destination="zDo-z1-y0a" eventType="touchUpInside" id="Ex7-7F-EEV"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                            </scrollView>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C09-gM-Ion">
+                                <rect key="frame" x="16" y="417" width="343" height="66.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vv5-6H-3CA">
+                                <rect key="frame" x="14" y="259" width="347" height="31"/>
+                                <connections>
+                                    <action selector="scrubAudio:" destination="zDo-z1-y0a" eventType="valueChanged" id="7n3-b7-qso"/>
+                                </connections>
+                            </slider>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jjC-76-PxL" firstAttribute="leading" secondItem="EjK-xh-iQF" secondAttribute="leadingMargin" id="3uo-2R-fpb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EhF-N2-2hx" secondAttribute="trailing" id="55Q-it-1Q2"/>
+                            <constraint firstAttribute="trailing" secondItem="oDJ-Cd-vYB" secondAttribute="trailing" id="D6z-GZ-dfR"/>
+                            <constraint firstItem="C09-gM-Ion" firstAttribute="trailing" secondItem="EjK-xh-iQF" secondAttribute="trailingMargin" id="FfP-SB-BXh"/>
+                            <constraint firstItem="jjC-76-PxL" firstAttribute="top" secondItem="BqP-V7-Rp8" secondAttribute="bottom" constant="8" id="M1o-3V-Czt"/>
+                            <constraint firstItem="EhF-N2-2hx" firstAttribute="leading" secondItem="EjK-xh-iQF" secondAttribute="leadingMargin" id="RFa-wi-Wa0"/>
+                            <constraint firstItem="oDJ-Cd-vYB" firstAttribute="top" secondItem="hup-Zw-cfs" secondAttribute="bottom" id="SHf-il-E65"/>
+                            <constraint firstItem="Vv5-6H-3CA" firstAttribute="top" secondItem="oDJ-Cd-vYB" secondAttribute="bottom" constant="20" id="Tey-qR-cpR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BqP-V7-Rp8" secondAttribute="trailing" id="bNP-ff-5ue"/>
+                            <constraint firstItem="BqP-V7-Rp8" firstAttribute="top" secondItem="Vv5-6H-3CA" secondAttribute="bottom" constant="8" id="cre-jw-Co1"/>
+                            <constraint firstItem="EhF-N2-2hx" firstAttribute="top" secondItem="jjC-76-PxL" secondAttribute="bottom" constant="8" id="dBP-Jl-dUh"/>
+                            <constraint firstItem="oDJ-Cd-vYB" firstAttribute="leading" secondItem="EjK-xh-iQF" secondAttribute="leading" id="eE8-2M-bXq"/>
+                            <constraint firstItem="jjC-76-PxL" firstAttribute="trailing" secondItem="EjK-xh-iQF" secondAttribute="trailingMargin" id="oKn-xN-PH2"/>
+                            <constraint firstItem="BqP-V7-Rp8" firstAttribute="leading" secondItem="EjK-xh-iQF" secondAttribute="leadingMargin" id="rAd-jm-c9X"/>
+                            <constraint firstItem="Vv5-6H-3CA" firstAttribute="trailing" secondItem="EjK-xh-iQF" secondAttribute="trailingMargin" id="tm1-Vm-ETb"/>
+                            <constraint firstItem="C09-gM-Ion" firstAttribute="top" secondItem="EhF-N2-2hx" secondAttribute="bottom" constant="8" id="w2z-gT-LCN"/>
+                            <constraint firstItem="C09-gM-Ion" firstAttribute="leading" secondItem="EjK-xh-iQF" secondAttribute="leadingMargin" id="xMq-Nd-eQS"/>
+                            <constraint firstItem="Vv5-6H-3CA" firstAttribute="leading" secondItem="EjK-xh-iQF" secondAttribute="leadingMargin" id="xp3-bZ-mTG"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="body" destination="C09-gM-Ion" id="ZZD-5A-ehJ"/>
                         <outlet property="fwdButton" destination="hh8-c5-KWY" id="C9o-Dz-lUM"/>
                         <outlet property="headline" destination="EhF-N2-2hx" id="gbc-jO-28F"/>
                         <outlet property="mainImage" destination="oDJ-Cd-vYB" id="vUY-Uk-gZY"/>
-                        <outlet property="pauseButton" destination="rvc-ty-dBZ" id="eb2-eb-P5k"/>
                         <outlet property="playButton" destination="acp-xn-WRP" id="aws-Jy-lMn"/>
+                        <outlet property="slider" destination="Vv5-6H-3CA" id="K5g-7d-GOq"/>
                         <outlet property="timestamp" destination="jjC-76-PxL" id="u9T-RI-USE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAo-gn-1uD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="167" y="2206"/>
+            <point key="canvasLocation" x="165.59999999999999" y="2205.2473763118442"/>
         </scene>
         <!--Menu-->
         <scene sceneID="Yh0-Km-BNu">
@@ -465,10 +475,10 @@ Audio</string>
             </objects>
             <point key="canvasLocation" x="-506" y="776"/>
         </scene>
-        <!--Dropped News-->
+        <!--NavVC-->
         <scene sceneID="G9Z-W5-6v9">
             <objects>
-                <navigationController title="Dropped News" automaticallyAdjustsScrollViewInsets="NO" id="Kag-ga-l5c" sceneMemberID="viewController">
+                <navigationController title="NavVC" automaticallyAdjustsScrollViewInsets="NO" id="Kag-ga-l5c" customClass="NavigationVC" customModule="TVCTest" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="home-off" id="VVu-RN-wX7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XWB-48-6ko">
@@ -487,9 +497,12 @@ Audio</string>
     </scenes>
     <resources>
         <image name="boomboxPexels159613.jpeg" width="2816" height="2112"/>
+        <image name="ff15" width="50" height="57"/>
         <image name="home-off" width="24" height="23"/>
         <image name="info-off" width="23" height="24"/>
         <image name="menu-off" width="24" height="21"/>
         <image name="newspaper-off" width="24" height="24"/>
+        <image name="play" width="49" height="48"/>
+        <image name="rew15" width="50" height="57"/>
     </resources>
 </document>

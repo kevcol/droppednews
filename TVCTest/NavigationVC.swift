@@ -15,8 +15,7 @@ class NavigationVC: UINavigationController, UIViewControllerTransitioningDelegat
         
         self.navigationBar.barTintColor = UIColor(red:0.00, green:0.35, blue:0.56, alpha:1.0)
         self.navigationBar.tintColor = UIColor.white
-
-        
+        self.navigationBar.barStyle = UIBarStyle.blackOpaque
       
     }
 
