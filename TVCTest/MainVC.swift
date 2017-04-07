@@ -29,9 +29,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // temporary content data; will be replaced by feeds
-       
-        
+        // temporary content data; will be replaced by Drupal data feeds
         let c1 = ContentItem(type: 1,
                              mainImage: #imageLiteral(resourceName: "drupalconParis"),
                              headline: "Use the power of Drupal to elevate your iOS apps",
@@ -95,17 +93,12 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         contentItems.append(c4)
         contentItems.append(c5)
         
-        
-        
-                
-        
         tableView.delegate = self
         tableView.dataSource = self
         }
 
     
     // MARK: - Table view code
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
